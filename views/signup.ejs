@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <title>Sample Site</title>
+   <script>
+       function empty() {
+            var x;
+            x = document.getElementById("roll-input").value;
+            if (x == "") {
+                //alert("Please insert empty value");
+                return false;
+            };
+        }
+   </script>
+    
+</head>
+<body>
+    <form class="form-horizontal" role="form" method="post" action="/signup" onClick="return empty()">
+        <% if (message.length > 0) { %>
+            <div class="alert alert-success col-sm-12"><%= message %></div>
+                <% } %>
+        <div id="signupalert" style="display:none" class="alert alert-danger">
+            <p>Error:</p>
+                <span></span>
+        </div>
+        Email: <input type="text" class="form-control" name="first_name" id="roll-input"><br><br>
+        Name: <input type="text" class="form-control" name="last_name"><br><br>
+        LinkedIn: <input type="text" class="form-control" name="mob_no"><br><br>
+        Password: <input type="password" class="form-control" name="user_name"><br><br>
+        Confirm Password: <input type="password" class="form-control" name="password"><br><br>
+        <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+</body>
+</html>
+ 

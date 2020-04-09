@@ -1,0 +1,19 @@
+<html lang="en">
+<head>   
+</head>
+<body id="clrblk">
+    <% if (message.length > 0) { %>
+        <div class="alert alert-danger col-sm-12"><%= message %></div>
+    <% } %>
+    
+	<form id="loginform" class="form-horizontal" role="form" method="post" action="/login">
+        Email: <input id="login-username" type="text" class="form-control" name="user_name" value=""><br><br>                                                                      
+		Password: <input id="login-password" type="password" class="form-control" name="password"><br><br>
+        <button id="btn-login" type="submit" class="btn btn-success">Login  </button>
+        <br><br>
+		Don't have an account!<a href="/signup">Sign Up Here</a>  
+		<br><br>
+		Login as admin!<a href="/admin">Click Here</a>
+    </form>    
+</body>
+</html>
