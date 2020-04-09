@@ -41,6 +41,6 @@ Type "Node app.js". <br>
 Database Name: register <br>
 Table Name: register_user <br>
 Values: id, username, name, linkedin, password <br>
-# TO DO
+### TO DO
 User, Admin secure linkage could be done using role based authorization. So for that I am working on Passport and User Role. <br>
 Next Path ready date: 10/9/2020 <br>
